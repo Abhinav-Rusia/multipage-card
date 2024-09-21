@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sofadi+One&family=Varela+Round&display=swap");
+  
+  html,
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #0a56c9, #d42323);
+  }
+  
+  .card {
+    display: flex;
+    padding: 40px;
+    background-color: #00337d;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 1000px;
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  .content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  
+  .material {
+    margin-top: 50px;
+    flex: 1;
+    padding-left: 40px;
+  }
+  
+  .material h1 {
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .material .tag {
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  .material p {
+    font-family: "Sofadi One", cursive;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    line-height: 1.5;
+  }
+  .nextpage {
+    align-self: flex-end; /* Align to the bottom of the .material */
+    margin-top: auto; /* Push it to the right end of the container */
+    cursor: pointer;
+    width: 34px; /* Set width for the icon */
+    height: 34px; /* Set height for the icon */
+    margin-left: 95%;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 15px;
+  }
+  
+  button {
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  button i {
+    font-size: 22px;
+  }
+  
+  .btn-primary {
+    background: #fc466b;
+    background: linear-gradient(135deg, #fc466b, #3f5efb);
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background: #e83a61;
+    background: linear-gradient(135deg, #e83a61, #2e4dbb);
+  }
+  
+  .btn-secondary {
+    background: #fff;
+    color: #00337d;
+    border: 2px solid #00337d;
+  }
+  
+  .btn-secondary:hover {
+    background: #f0f0f0;
+  }
+
+  .price{
+    font-size: 32px;
+  }
+  
+  @media (max-width: 640px) {
+    .container {
+      flex-direction: column; /* Stack items vertically */
+      padding: 20px; /* Add some padding for mobile */
+      overflow: auto; /* Enable scrolling if content exceeds view height */
+    }
+  
+    .card {
+      flex-direction: column; /* Stack image and content vertically */
+      padding: 20px; /* Adjust padding */
+      width: 100%; /* Full width on mobile */
+    }
+  
+    .content {
+      justify-content: center; /* Center image */
+      margin-bottom: 20px; /* Space between image and content */
+    }
+  
+    .material {
+      padding-left: 0; /* Remove left padding */
+      padding-top: 20px; /* Add top padding for spacing */
+      text-align: center; /* Center text for better appearance */
+      flex: 1; /* Allow it to grow and take remaining space */
+      overflow: auto; /* Enable scrolling if needed */
+    }
+  
+    .material h1 {
+      font-size: 36px; /* Adjust heading size for mobile */
+    }
+  
+    .material .tag {
+      font-size: 20px; /* Adjust tag size for mobile */
+    }
+  
+    .material p {
+      font-size: 14px; /* Adjust paragraph size for mobile */
+    }
+  
+    .nextpage {
+      margin-left: 0; /* Center icon for mobile */
+      align-self: flex-start; /* Align to the top of the container */
+      margin-top: 20px; /* Add some top margin */
+    }
+  
+    .button-group {
+      flex-direction: column; /* Stack buttons vertically */
+      align-items: center; /* Center buttons */
+    }
+  
+    button {
+      width: 100%; /* Full width buttons on mobile */
+    }
+  }
+  
